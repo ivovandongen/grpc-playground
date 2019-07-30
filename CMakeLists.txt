@@ -58,5 +58,8 @@ else ()
     set(DO_CLANG_TIDY "${CLANG_TIDY}" "-fix;-fix-errors")
 endif ()
 
+# Generated sources
+add_subdirectory(proto)
+
 # Main sources
 add_subdirectory(src)

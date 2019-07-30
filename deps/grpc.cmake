@@ -1,6 +1,6 @@
 include_guard_x()
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/deps/grpc ${CMAKE_BINARY_DIR}/grpc)
+add_subdirectory(${CMAKE_SOURCE_DIR}/deps/grpc ${CMAKE_BINARY_DIR}/grpc EXCLUDE_FROM_ALL)
 
 set(_PROTOBUF_LIBPROTOBUF libprotobuf)
 set(_PROTOBUF_PROTOC $<TARGET_FILE:protoc>)
